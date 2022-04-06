@@ -14,8 +14,7 @@ public class OShop {
     private OShop(){
 
     }
-    //   dupa public static punem syncrozines.Un thred a ajuns la linia 20, altu nu poate intra ine xecutia metodei, ramane
-//   blocat pana tredhul anterios isi termina executia .Cand a terminat, de abia cel de-al doilea poate incepe.Synchronized-> impiedicam sa se creeze de mai multe
+
     public static synchronized OShop getInstance(){
         if(instanta==null)
         {
@@ -25,17 +24,5 @@ public class OShop {
     }
 
 
-//   private OShop()
-//   {
-//
-//   }
-//   public static synchronized OShop getInstance()
-//   {
-//      if(instanta==null)
-//      {
-//         instanta=new OShop();
-//      }
-//      return instanta;
-//   }
 }
 

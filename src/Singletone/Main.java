@@ -4,8 +4,7 @@ package Singletone;
 
 public class Main {
     public static void main(String[] args) {
-//        OShop os= OShop.getInstance();
-//        OShop os1=new OShop();
+
         OShop os= OShop.getInstance();
         OShop os2= OShop.getInstance();
 
